@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Panel with panel-primary class</div>
+  <div class="panel-body">
+    <div class="container">
+      <h2>{{title}}</h2>
+      <table class="table table-striped" id="tablaTest">
+        <thead>
+          <tr>
+            <th>User Id</th>
+            <th>Id</th>
+            <th>title</th>
+            <th>body</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of data; let i=index">
+            <td>{{post.userId}}</td>
+            <td>{{post.id}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.body}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
