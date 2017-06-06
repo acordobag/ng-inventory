@@ -617,11 +617,12 @@ export class ListComponentComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.data);
-    this.title = "greivin es un idiota";
+    this.title = "Example Table";
   }
 
   ngAfterViewInit(){
     $('#tablaTest').DataTable({    
+      responsive: true,
       buttons: [
         'copy', 'excel', 'pdf'
     ]
