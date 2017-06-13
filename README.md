@@ -27,4 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Things to do
+
 http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
+https://github.com/oferh/ng2-completer
