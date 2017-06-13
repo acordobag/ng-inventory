@@ -1,0 +1,59 @@
+<div class="">
+    <div class="row">
+        <div class="col-md-12">
+        	<div class="invoice-title">
+    			<h2>Productos en Stock</h2>
+    		<hr>	
+    		</div>
+    		<div class="row">
+    			<div class="col-xs-6">
+    				<address>
+    				<strong>Global Promotions:</strong><br>
+    					Gustavo Jimenez<br>
+    					2250-0101<br>
+    				
+    					Desamparados, San Jose
+    				</address>
+    			</div>
+    			
+    			</div>
+    		</div>
+    		
+    	</div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-md-12">
+    		<div class="panel panel-default">
+    			<div class="panel-heading">
+    				<h3 class="panel-title"><strong>Order placed on {{date}}</strong></h3>
+    			</div>
+    			<div class="panel-body">
+    				<div class="table-responsive">
+    					<table class="table table-condensed">
+    						<thead>
+                                <tr >
+        							<td class="text-center"><strong>Código</strong></td>
+        							<td class="text-center"><strong>Nombre</strong></td>
+        							<td class="text-center"><strong>Color</strong></td>
+        							<td class="text-center"><strong>Descripción</strong></td>
+									<td class="text-center"><strong>Cantidad</strong></td>
+                                </tr>
+    						</thead>
+    						<tbody>
+                                <tr *ngFor="let p of productList">
+    								<td class="text-center">{{p.code}}</td>
+    								<td class="text-center">{{p.name}}</td>
+									<td class="text-center">{{p.color}}</td>
+									<td class="text-center">{{p.description}}</td>
+    								<td class="text-center">{{p.quantity}}</td>
+    							</tr>
+                                
+    						</tbody>
+    					</table>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
